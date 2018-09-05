@@ -1,0 +1,16 @@
+<!-- Contact Section -->
+ <div class="col-xs-12">
+<section id="contact" class="content-section text-center fixed-bottom">
+       <h3>{% if header.title %}{{ header.title }}{% endif %}</h3>
+            {{ page.content }}
+            <p><a href="mailto:{{ page.header.contact_email }}">{{ page.header.contact_email }}</a></p>
+            <ul class="list-inline banner-social-buttons">
+            {% for social in page.header.socials %}
+                <li>
+                    <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.icon }} fa-fw"></i> <span class="network-name">{{ social.name }}</span></a>
+                </li>
+            {% endfor %} 
+            </ul>
+        
+</section>
+</div>

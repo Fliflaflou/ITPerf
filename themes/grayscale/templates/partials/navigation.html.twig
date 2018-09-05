@@ -1,0 +1,30 @@
+<div class="collapse navbar-collapse navbar-right navbar-main-collapse col-xs-8">
+            <ul id="menu_horizontal">
+             {{ _self.nav_loop(pages) }}
+            </ul>
+{% macro nav_loop(page) %}
+    {% for p in page.children.visible %}
+        {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+        {% if p.children.visible.count > 0 %}
+            <li>
+                <a href="{{ p.url }}" class="{{ active_page }}">
+                    {{ p.menu }}
+                </a>
+                <ul>
+                <a>
+                    {{ _self.nav_loop(p) }}
+                </a>
+                </ul>
+            </li>
+        {% else %}
+            <li>
+                <a href="{{ p.url }}" class="{{ active_page }}">
+                    {{ p.menu }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+</ul>
+</div>
+

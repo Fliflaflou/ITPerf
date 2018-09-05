@@ -1,0 +1,38 @@
+.container {
+  z-index: 0;
+}
+
+/* ////////////////////////////////////   IMAGE /////////////////////////////// */
+
+.premier-plan {
+z-index: 4;
+position: absolute;
+width: 455px;
+height: 320px;
+}
+
+
+/* ////////////////////////////////////   Case /////////////////////////////// */
+
+.case {
+  overflow: hidden;
+}
+
+/* ///////////////////////////////Liste///////////////////////// */
+ul {
+  list-style: none;
+}
+
+/* ///////////////////////////////Animation/////////////////////// */
+
+@keyframes apparition {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+  }
