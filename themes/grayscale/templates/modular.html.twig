@@ -6,7 +6,7 @@
 
 {% block content %}
     {{ page.content }}
-    <div id="content container d-flex">
+    <div class="main">
         <div id="row">
         {% for module in page.collection() %}
                 {{ module.content }}
