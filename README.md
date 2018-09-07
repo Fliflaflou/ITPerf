@@ -14,3 +14,7 @@ Vous devrez évidemment avoir les dépendances php et configurer un compte.
 **Pour les modifications**
 - commentez vos commits
 - n'hésitez pas à créer votre propre branch
+
+**Un peu de Doc**
+https://learn.getgrav.org/
+et en francais : [la](https://www.en-toutes-lettres.fr/services-web/joomla-news/46-joomla-tutorial/tutoriels-grav/110-tuto-grav-creation-d-une-page-modulaire-modular-page)
